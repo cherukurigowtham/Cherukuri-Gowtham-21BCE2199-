@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-like Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chess-like Game</h1>
+    <div id="board"></div>
+    <div id="controls">
+        <h2>Controls</h2>
+        <select id="piece">
+            <!-- Options for pieces -->
+        </select>
+        <select id="direction">
+            <option value="L">Left</option>
+            <option value="R">Right</option>
+            <option value="F">Forward</option>
+            <option value="B">Backward</option>
+            <option value="FL">Forward-Left</option>
+            <option value="FR">Forward-Right</option>
+            <option value="BL">Backward-Left</option>
+            <option value="BR">Backward-Right</option>
+        </select>
+        <button onclick="sendMove()">Move</button>
+    </div>
+    <div id="current-turn">Current Turn: Player 1</div>
+    <script src="game.js"></script>
+</body>
+</html>
